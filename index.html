@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey like Bananas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB, #f0f0f0);
+        }
+        #gameCanvas {
+            border: 2px solid black;
+            background: url('background.jpg') center / cover no-repeat;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .button {
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        .button:active {
+            transform: scale(0.95);
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+    <div class="controls">
+        <button class="button" id="leftButton">←</button>
+        <button class="button" id="rightButton">→</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
